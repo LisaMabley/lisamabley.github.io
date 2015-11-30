@@ -1,0 +1,80 @@
+.content {
+  font-family: 'Lato', sans-serif;
+  width: 680px;
+  margin: 0px auto;
+  padding-bottom: 60px;
+}
+
+.content .photo img {
+  height: 190px;
+  width: 190px;
+  float: left;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.content .header {
+  height: 38px;
+  background-color: #5F8714;
+}
+
+.content h1 {
+  color: #0F468C;
+  font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.content h2 {
+  margin-bottom: 0px;
+  margin-left: 10px;
+  color: #faefdb;
+  padding: 3px;
+  font-weight: normal;
+}
+
+.content h3 {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  color: #0F468C;
+  text-transform:uppercase;
+}
+
+.content p {
+  margin: 10px;
+}
+
+.content .intro p {
+  font-size: 17px;
+  padding-right: 20px;
+}
+
+.content .contact img {
+  height: 22px;
+  width: 22px;
+  margin: 6px;
+  display: inline-block;
+  border: 0px;
+}
+
+.content a {
+	text-decoration: none;
+  font-weight: bold;
+  color: #5F8714;
+}
+
+.content .pow {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0F468C;
+}
+
+.content ul {
+  margin-top: 6px;
+}
+
+.content li {
+  margin-top: 4px;
+}
+
