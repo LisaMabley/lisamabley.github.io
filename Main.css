@@ -1,84 +1,164 @@
-.resume-body {
-  font-family: 'Lato', sans-serif;
-  width: 680px;
-  margin: 0px auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+/*TODO: left indent body bullets to 0*/
+/*TODO: make links visible w/o hover*/
+
+body {
+  color: #999999;
+  width: 700px;
+  margin: 0 auto;
+  background: #000000 url("tactile_noise.png") top left repeat;
 }
 
-.header {
-  height: 38px;
-  background-color: #5F8714;
+header, nav, aside, main {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.blockgroup {
+  /* check out my clearfix!! thanks, codeschool! */
+  display:block;
+  zoom: 1; /* IE6&7 */
+}
+
+.blockgroup:before, .blockgroup:after {
+  content: "";
+  display: table;
+}
+
+.blockgroup:after {
+  clear: both;
+}
+
+header {
+  margin: 20px 0 4px 0;
+}
+
+button {
+  font-family: 'Lobster', cursive;
+  font-size: 24px;
+  background: transparent;
+  color: #AAAAAA;
+  border: none;
+}
+
+button:hover {
+  color: #FFFFFF;
+}
+
+button:active, button:focus {
+  border: none;
+  outline: none;
+}
+
+button.contact {
+  margin-left: 375px;
+}
+
+header p {
+  font-size: 19px;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #AAAAAA;
+  padding-bottom: 20px;
+}
+
+nav {
+  background-color: #191919;
+  float: right;
+  display: block;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 6px;
+  text-align: right;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 8px;;
+}
+
+nav img {
+  height: 24px;
+  border: 0;
+  opacity: 0.45;
+}
+
+nav img:hover {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+}
+
+aside {
+  width: 210px;
+  height: 1600px;
+  float: left;
+}
+
+main {
+  height: 900px;
+  width: 100%;
 }
 
 h1 {
-  color: #0F468C;
+  color: #309b9d;
+  font-weight: 700;
   font-size: 46px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 50px 0 30px 0;
+  text-shadow: 4px 4px 6px #000000;
 }
 
 h2 {
-  margin-bottom: 0px;
-  margin-left: 10px;
-  color: #faefdb;
-  padding: 3px;
-  font-weight: normal;
+  font-size: 20px;
+  font-weight: 400;
+  color: #309b9d;
+  margin-top: 35px;
 }
 
 h3 {
   font-size: 16px;
   margin-left: 10px;
   margin-bottom: 0px;
-  color: #0F468C;
+  color: #AAAAAA;
+  font-weight: normal;
   text-transform:uppercase;
 }
 
-p {
-  margin: 10px;
+main a, aside a {
+	text-decoration: none;
+  font-weight: normal;
+  color: #AAAAAA;
 }
 
-a {
-	text-decoration: none;
-  font-weight: bold;
-  color: #5F8714;
+main a:hover, aside a:hover {
+  color: #FFFFFF;
 }
- 
+
 ul {
-  margin-top: 6px;
+  margin: 6px 0 0 0;
 }
 
 li {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
-.top-banner p {
-  font-size: 18px;
-  font-weight: 300;
+aside h2 {
+  margin: 0;
 }
 
-.photo img {
-  height: 195px;
-  float: left;
-  margin-right: 18px;
-  margin-bottom: 18px;
-  border: 1px solid #A0A0A0;
+aside h3 {
+  margin: 14px 30px 8px 3px;
 }
 
-.contact img {
-  height: 22px;
-  margin: 6px;
-  display: inline-block;
-  border: 0px;
+aside ul {
+  margin: 0;
+  padding: 0;
 }
 
-.contact p {
-  text-align: right;
+aside li {
+  margin: 3px;
+  list-style: none;
 }
-
-.pow {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #0F468C;
-}
-

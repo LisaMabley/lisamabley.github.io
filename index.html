@@ -5,105 +5,154 @@
     <title>Mabley Resume</title>
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Lobster' rel='stylesheet' type='text/css'>
 
     <!-- My custom styles -->
     <link rel="stylesheet" href="Main.css">
-    
+
+    <!-- Add JQuery -->
+    <script src="jquery-1.12.2.js"></script>
+    <script src="application.js"></script>
+
 </head>
 
 <body>
-    <div class="resume-body">
-        <div class="top-banner">
-            <div class="photo">
-                <img src="https://yt3.ggpht.com/-tS-P6sVTPtw/AAAAAAAAAAI/AAAAAAAAAAA/I_gvlHkWz04/s900-c-k-no/photo.jpg"/>
-            </div>
+  <div class = "blockgroup">
+    <header>
+      <h1>Lisa Mabley</h1>
+      <p>Software developer with strong graphic design and marketing background, especially interested in mobile technologies and the internet of things</p>
 
-            <h1>Lisa Mabley</h1>
-            <p>Graphic designer turned coder with two years of education in software development, seeking real-world experience in an entry-level coding position or internship with an experienced team</p>
+      <button class="more">Tell me more!</button>
+      <button class="contact">Contact</button>
+    </header>
 
-            <div class="contact">
-                <p>
-                    <a href="mailto:lisamabley@gmail.com?Subject=Congratulations,%20you%20have%20been%20accepted%20into%20Prime%20Academy" target="_top" target="_blank"><img src="http://icons.iconarchive.com/icons/iconsmind/outline/512/Envelope-icon.png" alt="Email"></a>
-                    <a href="https://www.linkedin.com/in/lisamabley" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
-                    <a href="https://twitter.com/LisaMabley" target="_blank"><img src="https://g.twimg.com/Twitter_logo_blue.png" alt="Twitter"></a>
-                    <a href="https://github.com/LisaMabley" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png" alt="GitHub"></a>
-                </p> 
-            </div>
-        </div>
+    <nav>
+      <!-- I know this isn't really functioning as nav, but that seemed like the closest equivalent
+      Let me know if this is bad practice -->
 
-        <div class="header">
-            <h2>Skills</h2>
-        </div>
+      <ul>
+          <li><a href="mailto:lisamabley@gmail.com?Subject=Job%20you%20opportunity" target="_top" target="_blank"><img src="envelope.png" alt="Email"></a></li>
+          <li><a href="https://www.linkedin.com/in/lisamabley" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn"></a></li>
+          <li><a href="https://twitter.com/LisaMabley" target="_blank"><img src="https://g.twimg.com/Twitter_logo_blue.png" alt="Twitter"></a></li>
+          <li><a href="https://github.com/LisaMabley" target="_blank"><img src="GitHub-Mark-Light.png" alt="GitHub"></a></li>
+      </ul>
+    </nav>
+  </div>
 
-        <p><span class="pow">languages</span> Java, Objective-C, Python, ActionScript, HTML/CSS</p>
-        <p><span class="pow">SOURCE CONTROL</span> Git</p>
-        <p><span class="pow">ADOBE CREATIVE SUITE</span> Flash, InDesign, Photoshop, Illustrator</p>
+  <div class="resume">
+    <!-- TODO: update content!! -->
 
-        <div class="header">
-            <h2>Education</h2>
-        </div>
+    <aside>
+      <h2>Skills</h2>
 
-        <p><span class="pow">MINNEAPOLIS COMMUNITY AND TECHNICAL COLLEGE</span> Software Development Program. Completed courses: Programming Logic and Design, Java Programming, Apple Mobile Development I &amp; II. In progress: Android programming. 4.0 GPA.</p>
-        <ul>
-            <li>Built a calculator app for iOS using Objective-C and Xcode</li>
-            <li>Learned iOS CoreData for use in Objective-C childcare-sharing app (in progress)</li>
-            <li>Built a consignment record store desktop app using Java, with a Derby database</li>
-            <li>Debugged, streamlined and organized code for Snake game in Java, written (and bug infested) by my instructor</li>
-        </ul>
-        <p><span class="pow">INDEPENDENT FILMMAKER PROJECT</span> Digital Video Production, FinalCut Pro</p>
-        <p><span class="pow">MINNEAPOLIS COLLEGE OF ART AND DESIGN</span> Graphic Design I</p>
-        <p><span class="pow">UNIVERSITY OF MINNESOTA</span> Bachelor of Arts degree, Studio Art major</p>
+      <h3>languages</h3>
+      <ul>
+        <li>Objective-C</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML/CSS</li>
+        <li>Javascript</li>
+        <li>ActionScript</li>
+      </ul>
 
-        <div class="header">
-            <h2>Experience</h2>
-        </div>
+      <h3>libraries</h3>
+      <ul>
+        <li>jQuery</li>
+      </ul>
 
-        <h3>FREELANCE</h3>
-        <p>Developer and Production Artist, 2013&ndash;present</p>
-        <ul>
-            <li>Upgraded user interfaces in TicTac Math iOS app for all device sizes and screen orientations, using Objective-C. <a href ="http://abstractpuzzle.com/" target="_blank">Abstract Puzzle</a> 4/15&ndash;5/15</li>
-            <li>Built UI elements in Photoshop for Infor website redesign. <a href ="http://www.bswing.com/" target="_blank">Bswing</a> 9/1&ndash;10/14</li>
-            <li>Developed campaign landing page for Cox Communications using HTML/CSS, email marketing pieces for Cox, BASF and UnitedHealthcare. <a href ="http://www.periscope.com/" target="_blank">Periscope</a> 6/14&ndash;8/14</li>
-            <li>Produced print pieces for Lowe’s and Target using Adobe Creative Suite. <a href ="http://www.littleco.com/" target="_blank">Little</a> 10/13&ndash;1/14</li>
-         </ul>
+      <h3>mobile</h3>
+      <ul>
+        <li>iOS</li>
+        <li>Android</li>
+      </ul>
 
-        <h3>MARTIN WILLIAMS ADVERTISING</h3>
-        <p>Production Artist, 2006&ndash;2013</p>
-        <ul>
-            <li>Satisfied a disgruntled client by improving templating, reducing turnaround time for email marketing pieces from days to hours.</li>
-        </ul>
+      <h3>data/database</h3>
+      <ul>
+        <li>JSON</li>
+        <li>SQLite</li>
+        <li>Apache Derby</li>
+      </ul>
 
-        <h3>MINNESOTA WOMEN’S PRESS, INC.</h3>
-        <p>Creative Director, 2004&ndash;2006<br>
-        Graphic Designer, 1999&ndash;2004</p>
-            <ul>
-            <li>Cut production staff time in half by transitioning from manual to digital production using Adobe CreativeSuite.</li>
-        </ul>
+      <h3>source control</h3>
+      <ul>
+        <li>git</li>
+      </ul>
 
-        <div class="header">
-            <h2>Awards</h2>
-        </div>
+      <h3>adobe creative suite</h3>
+      <ul>
+        <li>Photoshop</li>
+        <li>Illustrator</li>
+        <li>InDesign</li>
+        <li>Flash</li>
+      </ul>
+    </aside>
 
-        <h3>Scholarship recipient</h3>
-        <p>Grace Hopper Celebration of Women in Computing 2015</p>
+    <main>
+      <h2>Education</h2>
 
-        <div class="header">
-            <h2>Professional Activities</h2>
-        </div>
+      <p><b><a href="https://primeacademy.io/" target="_blank">Prime Digital Academy</a></b> Graduate of bootcamp-style software development program. </p>
+      <!-- Add projects -->
 
-        <h3>Youth mentoring</h3>
-        <ul>
-            <li>Technovation Challenge, 2015</li>
-            <li>CoderDojo Twin Cities, 2013</li>
-        </ul>
-        <h3>Technolgy meetups</h3>
-            <ul>
-                <li>Mobile Twin Cities</li>
-                <li>Mobilize MN</li>
-                <li>Women Who Code</li>
-                <li>Twin Cities iPhone Developers</li>
-            </ul>
-	</div>
+      <p><b><a href="http://www.minneapolis.edu/" target="_blank">Minneapolis Community and Technical College</a></b> Completed courses: Programming Logic and Design, Java Programming, Apple Mobile Development I &amp; II, Android programming.</p>
+      <ul>
+          <li>Built a calculator app for iOS using Objective-C and Xcode</li>
+          <li>Learned iOS CoreData for use in Objective-C childcare-sharing app (in progress)</li>
+          <li>Built a consignment record store desktop app using Java, with a Derby database</li>
+          <li>Debugged, streamlined and organized code for Snake game in Java, written (and bug infested) by my instructor</li>
+      </ul>
+      <p><b><a href="http://ifpmn.org/" target="_blank">Independent Filmmaker Project</a></b> Digital Video Production, FinalCut Pro</p>
+      <p><b><a href="http://mcad.edu/" target="_blank">Minneapolis College of Art and Design</a></b> Graphic Design I</p>
+      <p><b><a href="https://twin-cities.umn.edu/" target="_blank">University of Minnesota</a></b> Bachelor of Arts degree, Studio Art major</p>
+
+      <h2>Project experience</h2>
+      <ul>
+      <!-- Text needs massage -->
+          <li>Hack the gap ... in May something awesome will happen at this hackathon</li>
+          <li>Civic Voice -- Winner of Hennepin County's Geo:Code 2.0 a code-a-thon using publicly-available data ... </li>
+          <li>Freelance: Upgraded user interfaces in TicTac Math iOS app for all device sizes and screen orientations, using Objective-C. <a href ="http://abstractpuzzle.com/" target="_blank">Abstract Puzzle</a> 4/15&ndash;5/15</li>
+          <li>Freelance: Built UI elements in Photoshop for Infor website redesign. <a href ="http://www.bswing.com/" target="_blank">Bswing</a> 9/1&ndash;10/14</li>
+          <li>Freelance: Developed campaign landing page for Cox Communications using HTML/CSS, email marketing pieces for Cox, BASF and UnitedHealthcare. <a href ="http://www.periscope.com/" target="_blank">Periscope</a> 6/14&ndash;8/14</li>
+      </ul>
+
+      <h2>Employment experience</h2>
+
+      <h3><a href="http://www.martinwilliams.com/" target="_blank">Martin Williams Advertising</a></h3>
+      <p>Production Artist, 2006&ndash;2013</p>
+      <!-- More details? -->
+      <ul>
+          <li>Satisfied a disgruntled client by improving templating, reducing turnaround time for email marketing pieces from days to hours.</li>
+      </ul>
+
+      <h3><a href="http://www.womenspress.com/" target="_blank">MINNESOTA WOMEN’S PRESS, INC.</a></h3>
+      <p>Creative Director, 2004&ndash;2006<br>
+      Graphic Designer, 1999&ndash;2004</p>
+      <!-- More details, or remove altogether? -->
+          <ul>
+          <li>Cut newspaper production time in half by transitioning from manual to digital production using Adobe CreativeSuite, freeing staff resources for other tasks.</li>
+      </ul>
+
+      <h2>Awards</h2>
+      <h3>Scholarship recipient</h3>
+      <p><a href="http://ghc.anitaborg.org/" target="_blank">Grace Hopper Celebration of Women in Computing</a> 2015</p>
+
+      <h2>Professional Activities</h2>
+
+      <h3>Youth mentoring</h3>
+      <ul>
+          <li>Technovation Challenge, 2015</li>
+          <li>CoderDojo Twin Cities, 2013</li>
+      </ul>
+
+      <h3>Technolgy meetups</h3>
+      <ul>
+      <!-- Not current -->
+          <li>Mobile Twin Cities</li>
+          <li>Mobilize MN</li>
+          <li>Women Who Code</li>
+      </ul>
+
+    </main>
+  </div>
+
 </body>
 </html>
