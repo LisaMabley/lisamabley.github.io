@@ -1,2 +1,2 @@
 # lisamabley-dev
-Professional website created May 2023
+Professional website, created May 2023.
