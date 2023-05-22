@@ -3393,6 +3393,11 @@ input, select, textarea {
 		padding-top: 3.25rem;
 	}
 
+	h4 {
+		margin: 16px;
+		color: rgba(255, 255, 255, 0.5);
+	}
+
 	#header {
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3427,6 +3432,7 @@ input, select, textarea {
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-top: 0.125rem;
+			cursor: pointer !important;
 		}
 
 			#header > .logo span {
