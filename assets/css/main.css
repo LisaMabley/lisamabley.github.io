@@ -2437,9 +2437,10 @@ input, select, textarea {
 		}
 
 		.image.maxheight img {
-			max-height: 138px;
-			min-height: 138px;
-			height: 138px;
+			max-height: 140px;
+			min-height: 140px;
+			height: 140px;
+			width: 100%;
 			background: #fff;
 			align-content: center;
 		}
