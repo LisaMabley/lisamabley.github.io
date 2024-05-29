@@ -2436,6 +2436,11 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.image.maxheight img {
+			max-height: 138px;
+			align-content: center;
+		}
+
 		.image.feature img {
 			width: 30%;
 		}
