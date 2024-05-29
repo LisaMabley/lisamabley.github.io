@@ -29,6 +29,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+article {
+	background-color: #ffffff;
+}
+
 body {
 	line-height: 1;
 }
@@ -2448,6 +2452,7 @@ input, select, textarea {
 			max-height: 140px;
 			min-height: 140px;
 			height: 140px;
+			padding: 6px;
 			margin: 0 auto;
 		}
 
