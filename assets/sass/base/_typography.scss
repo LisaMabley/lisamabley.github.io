@@ -1,28 +1,24 @@
 ///
-/// Story by Pixelarity
+/// Venue by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
 
-/* Type */
+/* Typography */
 
 	html {
-		font-size: 18pt;
+		font-size: 13pt;
 
 		@include breakpoint('<=xlarge') {
-			font-size: 14pt;
-		}
-
-		@include breakpoint('<=large') {
-			font-size: 12pt;
-		}
-
-		@include breakpoint('<=small') {
 			font-size: 11pt;
 		}
 
-		@include breakpoint('<=xxsmall') {
-			font-size: 10pt;
+		@include breakpoint('<=medium') {
+			font-size: 12pt;
+		}
+
+		@include breakpoint('<=xsmall') {
+			font-size: 11pt;
 		}
 	}
 
@@ -33,8 +29,8 @@
 
 	body, input, select, textarea {
 		font-family: _font(family);
-		font-size: 1rem;
 		font-weight: _font(weight);
+		font-size: 1rem;
 		line-height: 1.65;
 	}
 
@@ -57,17 +53,15 @@
 
 	p {
 		margin: 0 0 _size(element-margin) 0;
-
-		&.major {
-			font-size: 1.25rem;
-		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: _font(weight);
-		line-height: 1.375;
-		letter-spacing: _font(kerning);
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		font-family: _font(family-heading);
+		font-weight: _font(weight-bold);
+		line-height: 1.5;
+		margin: 0 0 (_size(element-margin) * 0.75) 0;
+		text-transform: uppercase;
+		letter-spacing: 0.25rem;
 
 		a {
 			color: inherit;
@@ -76,20 +70,21 @@
 	}
 
 	h1 {
-		font-size: 3.5rem;
+		font-size: 4rem;
 		line-height: 1.2;
 	}
 
 	h2 {
 		font-size: 2.25rem;
+		line-height: 1.3;
 	}
 
 	h3 {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 
 	h4 {
-		font-size: 1.1rem;
+		font-size: 1rem;
 	}
 
 	h5 {
@@ -98,6 +93,22 @@
 
 	h6 {
 		font-size: 0.7rem;
+	}
+
+	@include breakpoint('<=small') {
+		h1 {
+			font-size: 2.75rem;
+			line-height: 1.3;
+		}
+
+		h2 {
+			font-size: 1.75rem;
+			line-height: 1.5;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+		}
 	}
 
 	sub {
@@ -113,77 +124,48 @@
 	}
 
 	blockquote {
-		border-left: solid (_size(border-width) * 4);
+		border-left: solid 0.5rem;
 		font-style: italic;
 		margin: 0 0 _size(element-margin) 0;
-		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+		padding: (_size(element-margin) * 0.5) 0 (_size(element-margin) * 0.5) _size(element-margin);
 	}
 
 	code {
 		border-radius: _size(border-radius);
+		border: solid 1px;
 		font-family: _font(family-fixed);
-		font-size: 0.9em;
+		font-size: 0.9rem;
 		margin: 0 0.25rem;
-		padding: 0.25rem 0.325rem;
+		padding: 0.25rem 0.65rem;
 	}
 
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: _font(family-fixed);
-		font-size: 0.9em;
+		font-size: 0.9rem;
 		margin: 0 0 _size(element-margin) 0;
 
 		code {
 			display: block;
-			line-height: 1.5;
-			padding: 0.75rem 1rem;
+			line-height: 1.75;
+			padding: 1rem 1.5rem;
 			overflow-x: auto;
 		}
 	}
 
 	hr {
 		border: 0;
-		border-bottom: solid _size(border-width);
-		margin: (_size(element-margin) * 1.25) 0;
+		border-bottom: solid 1px;
+		margin: _size(element-margin) 0;
 
 		&.major {
-			margin: (_size(element-margin) * 1.75) 0;
+			margin: (_size(element-margin) * 2) 0;
 		}
-	}
 
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
-
-	@include breakpoint('<=small') {
-		p {
+		@include breakpoint('<=small') {
 			&.major {
-				font-size: 1.1rem;
+				margin: (_size(element-margin) * 1.5) 0;
 			}
-		}
-
-		h1 {
-			font-size: 2.5rem;
-		}
-
-		h2 {
-			font-size: 2rem;
-		}
-
-		h3 {
-			font-size: 1.25rem;
-		}
-
-		h4 {
-			font-size: 1rem;
 		}
 	}
 
@@ -199,11 +181,7 @@
 		}
 
 		a {
-			color: _palette($p, fg-bold);
-
-			&:hover {
-				color: _palette($p, accent);
-			}
+			color: _palette(accent1);
 		}
 
 		strong, b {
