@@ -1,5 +1,5 @@
 ///
-/// Venue by Pixelarity
+/// Story by Pixelarity
 /// pixelarity.com | hello@pixelarity.com
 /// License: pixelarity.com/license
 ///
@@ -14,18 +14,22 @@
 		}
 
 		@include breakpoint('<=large') {
-			@include html-grid(1.5rem, 'large');
+			@include html-grid(2rem, 'large');
 		}
 
 		@include breakpoint('<=medium') {
-			@include html-grid(1.5rem, 'medium');
+			@include html-grid(2rem, 'medium');
 		}
 
 		@include breakpoint('<=small') {
-			@include html-grid(1.25rem, 'small');
+			@include html-grid(2rem, 'small');
 		}
 
 		@include breakpoint('<=xsmall') {
-			@include html-grid(1.25rem, 'xsmall');
+			@include html-grid(2rem, 'xsmall');
+		}
+
+		@include breakpoint('<=xxsmall') {
+			@include html-grid(2rem, 'xxsmall');
 		}
 	}
