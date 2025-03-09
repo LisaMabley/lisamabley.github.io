@@ -45,10 +45,10 @@ blockquote, q {
 	quotes: none;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
 
 table {
 	border-collapse: collapse;
@@ -123,29 +123,29 @@ input, select, textarea {
 		font-size: 13pt;
 	}
 
-		@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 1680px) {
 
-			html {
-				font-size: 11pt;
-			}
-
+		html {
+			font-size: 11pt;
 		}
 
-		@media screen and (max-width: 980px) {
+	}
 
-			html {
-				font-size: 12pt;
-			}
+	@media screen and (max-width: 980px) {
 
+		html {
+			font-size: 12pt;
 		}
 
-		@media screen and (max-width: 480px) {
+	}
 
-			html {
-				font-size: 11pt;
-			}
+	@media screen and (max-width: 480px) {
 
+		html {
+			font-size: 11pt;
 		}
+
+	}
 
 	body {
 		background-color: #ffffff;
@@ -167,9 +167,9 @@ input, select, textarea {
 		text-decoration: underline;
 	}
 
-		a:hover {
-			text-decoration: none;
-		}
+	a:hover {
+		text-decoration: none;
+	}
 
 	strong, b {
 		font-weight: 400;
@@ -192,10 +192,10 @@ input, select, textarea {
 		letter-spacing: 0.25rem;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: inherit;
+		text-decoration: none;
+	}
 
 	h1 {
 		font-size: 4rem;
@@ -276,12 +276,12 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-		pre code {
-			display: block;
-			line-height: 1.75;
-			padding: 1rem 1.5rem;
-			overflow-x: auto;
-		}
+	pre code {
+		display: block;
+		line-height: 1.75;
+		padding: 1rem 1.5rem;
+		overflow-x: auto;
+	}
 
 	hr {
 		border: 0;
@@ -289,17 +289,17 @@ input, select, textarea {
 		margin: 2rem 0;
 	}
 
+	hr.major {
+		margin: 4rem 0;
+	}
+
+	@media screen and (max-width: 736px) {
+
 		hr.major {
-			margin: 4rem 0;
+			margin: 3rem 0;
 		}
 
-		@media screen and (max-width: 736px) {
-
-			hr.major {
-				margin: 3rem 0;
-			}
-
-		}
+	}
 
 	input, select, textarea {
 		color: #282828;
